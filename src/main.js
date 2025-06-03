@@ -4,7 +4,8 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 import { callback } from './ejemploCodigo/callback.js'
 import {promesa} from "./ejemploCodigo/promesa.js"
-
+import { promiseRaceComponent } from './ejemploCodigo/promiseRaceComponent.js'
+import { sincronoComponente } from './ejemploCodigo/sincronoComponente.js'
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
@@ -25,5 +26,7 @@ document.querySelector('#app').innerHTML = `
 `
 
 //callback(document.getElementById("titulo"))
-promesa(document.getElementById("titulo"))
+//promesa(document.getElementById("titulo"))
 //setupCounter(document.querySelector('))
+//promiseRaceComponent(document.getElementById("titulo"));
+sincronoComponente(document.getElementById("titulo"));
